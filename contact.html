@@ -11,47 +11,86 @@
       padding: 0;
       text-align: center;
     }
+
     nav {
       background: #2f6b3f;
       padding: 15px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .box {
       background: white;
       padding: 30px;
-      border-radius: 10px;
-      max-width: 600px;
+      border-radius: 12px;
+      max-width: 650px;
       margin: 40px auto;
     }
-    .contact-info p {
-      margin: 10px 0;
+
+    .box img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      margin: 15px 0;
+      font-size: 16px;
+    }
+
+    .contact-item a {
+      color: #2f6b3f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigatie -->
   <nav>
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
     <a href="contact.html">Contact</a>
   </nav>
 
+  <!-- Contact content -->
   <div class="box">
+    <img src="kugaya_logo.jpg" alt="Kugaya Garden & Landscaping">
+
     <h1>Contact</h1>
-    <div class="contact-info">
-      <p>📍 Locatie: Nederland</p>
-      <p>📧 Email: info@kugayagarden.nl</p>
-      <p>📞 Telefoon: +31 6 12345678</p>
+    <p><strong>Kugaya’s Garden & Landscaping</strong></p>
+
+    <div class="contact-item">
+      📞 Telefoon:<br>
+      <a href="tel:+254792648580">+254 792 648 580</a><br>
+      <a href="tel:+254795968974">+254 795 968 974</a>
+    </div>
+
+    <div class="contact-item">
+      📧 Email:<br>
+      <a href="mailto:kugayasgarden@gmail.com">kugayasgarden@gmail.com</a>
+    </div>
+
+    <div class="contact-item">
+      🌍 Social media:<br>
+      Facebook • Instagram • TikTok • YouTube
     </div>
   </div>
 
 </body>
 </html>
+
