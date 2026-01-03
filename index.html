@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Kugaya Garden - Home</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,6 +13,7 @@
       text-align: center;
     }
 
+    /* Navigation */
     nav {
       background: #2f6b3f;
       padding: 15px;
@@ -29,7 +31,7 @@
     }
 
     /* Hero */
-    .box {
+    .hero {
       background: white;
       padding: 40px 30px;
       border-radius: 12px;
@@ -37,15 +39,20 @@
       margin: 40px auto;
     }
 
-    .box img.logo {
+    .hero img {
       max-width: 300px;
       margin-bottom: 20px;
     }
 
+    /* Sections */
     section {
       max-width: 1200px;
       margin: 70px auto;
       padding: 0 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -55,11 +62,11 @@
 
     p {
       max-width: 750px;
-      margin: 0 auto 40px;
+      margin: 0 auto 35px;
       font-size: 16px;
     }
 
-    /* CTA button */
+    /* Button */
     .btn {
       display: inline-block;
       background: #2f6b3f;
@@ -68,14 +75,13 @@
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 10px;
     }
 
     .btn:hover {
       opacity: 0.9;
     }
 
-    /* Vibes */
+    /* Team vibes */
     .vibes {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -90,29 +96,45 @@
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
 
-    /* Irregular garden gallery */
+    /* Garden gallery */
     .garden-gallery {
-      column-count: 3;
-      column-gap: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
     }
 
-    .garden-gallery img {
+    .garden-row {
+      display: grid;
+      gap: 25px;
+    }
+
+    .garden-row.two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .garden-row.three {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .garden-row img {
       width: 100%;
-      margin-bottom: 20px;
+      height: 260px;
+      object-fit: cover;
       border-radius: 18px;
-      display: block;
-      break-inside: avoid;
     }
 
+    /* Responsive */
     @media (max-width: 900px) {
-      .garden-gallery {
-        column-count: 2;
+      .garden-row.two,
+      .garden-row.three {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
     @media (max-width: 500px) {
-      .garden-gallery {
-        column-count: 1;
+      .garden-row.two,
+      .garden-row.three {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -140,6 +162,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -150,12 +173,12 @@
   </nav>
 
   <!-- Hero -->
-  <div class="box">
-    <img src="kugaya_logo.jpg" alt="Kugaya Garden & Landscaping" class="logo">
+  <div class="hero">
+    <img src="kugaya_logo.jpg" alt="Kugaya Garden & Landscaping">
     <h1>Plants, Gardens & Landscaping</h1>
     <p>
       Kugaya’s Garden is a plant-selling garden providing healthy plants,
-      garden maintenance, and professional landscaping services.
+      professional garden maintenance, and landscaping services.
     </p>
   </div>
 
@@ -163,7 +186,7 @@
   <section>
     <h2>Plants for Sale</h2>
     <p>
-      We grow and sell a variety of healthy plants for homes, hotels,
+      We grow and sell a variety of quality plants for homes, hotels,
       offices, and outdoor spaces.
     </p>
     <a href="products.html" class="btn">View Our Plants</a>
@@ -173,8 +196,8 @@
   <section>
     <h2>Our Team & Our Vibe</h2>
     <p>
-      Happy people create beautiful gardens. Our team works with care,
-      respect, and love for nature.
+      Happy people create beautiful gardens. Our team works together
+      with care, respect, and love for nature.
     </p>
 
     <div class="vibes">
@@ -185,7 +208,7 @@
     </div>
   </section>
 
-  <!-- Garden gallery -->
+  <!-- Gardens -->
   <section>
     <h2>Our Gardens</h2>
     <p>
@@ -193,18 +216,34 @@
     </p>
 
     <div class="garden-gallery">
-      <img src="images/general_garden/garden_1.jpeg" alt="Garden 1">
-      <img src="images/general_garden/garden_2.jpeg" alt="Garden 2">
-      <img src="images/general_garden/garden_3.jpeg" alt="Garden 3">
-      <img src="images/general_garden/garden_4.jpeg" alt="Garden 4">
-      <img src="images/general_garden/garden_5.jpeg" alt="Garden 5">
-      <img src="images/general_garden/garden_6.jpeg" alt="Garden 6">
-      <img src="images/general_garden/garden_7.jpeg" alt="Garden 7">
-      <img src="images/general_garden/garden_8.jpeg" alt="Garden 8">
-      <img src="images/general_garden/garden_9.jpeg" alt="Garden 9">
-      <img src="images/general_garden/garden_10.jpeg" alt="Garden 10">
-      <img src="images/general_garden/garden_11.jpeg" alt="Garden 11">
-      <img src="images/general_garden/garden_12.jpeg" alt="Garden 12">
+
+      <div class="garden-row two">
+        <img src="images/general_garden/garden_1.jpeg" alt="Garden 1">
+        <img src="images/general_garden/garden_2.jpeg" alt="Garden 2">
+      </div>
+
+      <div class="garden-row three">
+        <img src="images/general_garden/garden_3.jpeg" alt="Garden 3">
+        <img src="images/general_garden/garden_4.jpeg" alt="Garden 4">
+        <img src="images/general_garden/garden_5.jpeg" alt="Garden 5">
+      </div>
+
+      <div class="garden-row two">
+        <img src="images/general_garden/garden_6.jpeg" alt="Garden 6">
+        <img src="images/general_garden/garden_7.jpeg" alt="Garden 7">
+      </div>
+
+      <div class="garden-row three">
+        <img src="images/general_garden/garden_8.jpeg" alt="Garden 8">
+        <img src="images/general_garden/garden_9.jpeg" alt="Garden 9">
+        <img src="images/general_garden/garden_10.jpeg" alt="Garden 10">
+      </div>
+
+      <div class="garden-row two">
+        <img src="images/general_garden/garden_11.jpeg" alt="Garden 11">
+        <img src="images/general_garden/garden_12.jpeg" alt="Garden 12">
+      </div>
+
     </div>
   </section>
 
@@ -217,6 +256,7 @@
 
 </body>
 </html>
+
 
 
 
