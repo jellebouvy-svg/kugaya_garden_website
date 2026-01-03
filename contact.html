@@ -30,36 +30,43 @@
 
     .box {
       background: white;
-      padding: 30px;
+      padding: 40px 30px;
       border-radius: 12px;
       max-width: 700px;
       margin: 40px auto;
     }
 
-    .box img {
-      max-width: 280px;
-      height: auto;
-      margin-bottom: 20px;
+    h1, h2 {
+      color: #2f6b3f;
     }
 
-    .contact-item {
-      margin: 18px 0;
+    .intro {
+      max-width: 600px;
+      margin: 0 auto 30px;
       font-size: 16px;
     }
 
-    .contact-item a {
-      color: #2f6b3f;
-      text-decoration: none;
-      font-weight: bold;
+    .contact-main {
+      margin: 30px 0;
+      font-size: 17px;
     }
 
-    .contact-item a:hover {
+    .contact-main a {
+      display: block;
+      margin: 10px 0;
+      color: #2f6b3f;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .contact-main a:hover {
       text-decoration: underline;
     }
 
     /* Map */
     .map-container {
-      margin-top: 30px;
+      margin-top: 25px;
       border-radius: 14px;
       overflow: hidden;
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
@@ -82,6 +89,24 @@
     .map-link:hover {
       text-decoration: underline;
     }
+
+    /* Socials */
+    .socials {
+      margin-top: 40px;
+      font-size: 16px;
+    }
+
+    .socials a {
+      display: block;
+      margin: 8px 0;
+      color: #2f6b3f;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .socials a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -95,36 +120,26 @@
 
   <!-- Contact content -->
   <div class="box">
-    <img src="kugaya_logo.jpg" alt="Kugaya Garden & Landscaping">
 
-    <h1>Contact</h1>
-    <p><strong>Kugaya’s Garden & Landscaping</strong></p>
+    <h1>Get in Touch</h1>
 
-    <div class="contact-item">
-      📞 Phone:<br>
-      <a href="tel:+254792648580">+254 792 648 580</a><br>
-      <a href="tel:+254795968974">+254 795 968 974</a>
+    <p class="intro">
+      Please get in contact with us to learn more about our plants,
+      services, availability, and pricing. We are happy to discuss
+      your garden needs and possibilities.
+    </p>
+
+    <div class="contact-main">
+      <a href="tel:+254792648580">📞 +254 792 648 580</a>
+      <a href="tel:+254795968974">📞 +254 795 968 974</a>
+      <a href="mailto:kugayasgarden@gmail.com">📧 kugayasgarden@gmail.com</a>
     </div>
 
-    <div class="contact-item">
-      📧 Email:<br>
-      <a href="mailto:kugayasgarden@gmail.com">kugayasgarden@gmail.com</a>
-    </div>
-
-    <div class="contact-item">
-      🌍 Social Media:<br>
-      <a href="https://www.tiktok.com/@kugayasgarden" target="_blank">TikTok – Kugaya’s Garden</a><br>
-      <a href="https://www.instagram.com/kugayasgarden/" target="_blank">Instagram – Kugaya’s Garden</a><br>
-      <a href="https://www.facebook.com/profile.php?id=61584452922600#" target="_blank">Facebook – Kugaya’s Garden</a>
-    </div>
-
-    <!-- Google Maps -->
     <h2>Our Location</h2>
 
     <div class="map-container">
       <iframe
         src="https://www.google.com/maps?q=Mtwapa%20ATC&z=17&output=embed"
-        allowfullscreen=""
         loading="lazy">
       </iframe>
     </div>
@@ -135,8 +150,28 @@
       target="_blank">
       📍 View on Google Maps
     </a>
+
+    <div class="socials">
+      <h2>Follow Our Work</h2>
+      <p>
+        Follow Kugaya’s Garden on social media to see our latest gardens,
+        plants, and daily work.
+      </p>
+
+      <a href="https://www.tiktok.com/@kugayasgarden" target="_blank">
+        TikTok – Kugaya’s Garden
+      </a>
+      <a href="https://www.instagram.com/kugayasgarden/" target="_blank">
+        Instagram – Kugaya’s Garden
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61584452922600#" target="_blank">
+        Facebook – Kugaya’s Garden
+      </a>
+    </div>
+
   </div>
 
 </body>
 </html>
+
 
