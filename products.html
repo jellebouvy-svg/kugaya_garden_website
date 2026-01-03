@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Kugaya Garden - Products</title>
@@ -11,45 +11,105 @@
       padding: 0;
       text-align: center;
     }
+
     nav {
       background: #2f6b3f;
       padding: 15px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    .box {
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 30px auto 60px;
+      padding: 0 20px;
+    }
+
+    .product-card {
       background: white;
-      padding: 30px;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
       border-radius: 10px;
-      max-width: 600px;
-      margin: 40px auto;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 0;
+      color: #2f6b3f;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
     <a href="contact.html">Contact</a>
   </nav>
 
+  <h1>Our Plants</h1>
+  <p>High-quality plants for gardens and landscaping 🌿</p>
 
-  <div class="box">
-    <h1>Our Products</h1>
-    <ul style="list-style: none; padding: 0;">
-      <li>🌱 Planten</li>
-      <li>🌿 Kruiden</li>
-      <li>🌸 Bloemen</li>
-    </ul>
+  <!-- Products grid -->
+  <div class="products">
+
+    <div class="product-card">
+      <img src="images/products/Alamander_yellow_flowers.jpeg" alt="Alamander Yellow Flowers">
+      <h3>Alamander Yellow Flowers</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/Coconut_palm.jpeg" alt="Coconut Palm">
+      <h3>Coconut Palm</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/Crotons.jpeg" alt="Crotons">
+      <h3>Crotons</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/Golden_palm.jpeg" alt="Golden Palm">
+      <h3>Golden Palm</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/Hibiscus_virgeted.jpeg" alt="Variegated Hibiscus">
+      <h3>Variegated Hibiscus</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/Jerusalem_ground_cover.jpeg" alt="Jerusalem Ground Cover">
+      <h3>Jerusalem Ground Cover</h3>
+    </div>
+
   </div>
 
 </body>
 </html>
+
