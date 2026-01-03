@@ -28,52 +28,84 @@
       text-decoration: underline;
     }
 
-    /* Hero box */
+    /* Hero */
     .box {
       background: white;
       padding: 40px 30px;
       border-radius: 12px;
-      max-width: 700px;
+      max-width: 750px;
       margin: 40px auto;
     }
 
     .box img.logo {
       max-width: 300px;
-      height: auto;
       margin-bottom: 20px;
     }
 
-    /* About section */
-    .about {
-      max-width: 1100px;
-      margin: 60px auto;
+    section {
+      max-width: 1200px;
+      margin: 70px auto;
       padding: 0 20px;
     }
 
-    .about h2 {
+    h2 {
       color: #2f6b3f;
       margin-bottom: 10px;
     }
 
-    .about p {
-      max-width: 700px;
+    p {
+      max-width: 750px;
       margin: 0 auto 40px;
       font-size: 16px;
     }
 
-    /* Vibe images */
-    .vibes {
+    /* Cards / grids */
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 25px;
     }
 
-    .vibes img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
+    .card {
+      background: white;
       border-radius: 14px;
+      padding: 15px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Vibes */
+    .vibes img {
+      height: 240px;
+    }
+
+    /* CTA */
+    .cta {
+      background: #2f6b3f;
+      color: white;
+      padding: 45px 20px;
+      margin-top: 80px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 15px;
+      background: white;
+      color: #2f6b3f;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .cta a:hover {
+      opacity: 0.85;
     }
   </style>
 </head>
@@ -86,33 +118,77 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Hero / Intro -->
+  <!-- Hero -->
   <div class="box">
     <img src="kugaya_logo.jpg" alt="Kugaya Garden & Landscaping" class="logo">
-
-    <h1>Welcome to Kugaya Garden</h1>
+    <h1>Plants, Gardens & Landscaping</h1>
     <p>
-      We create and maintain beautiful outdoor spaces.
-      From garden care to landscaping, we work with passion and teamwork 🌿
+      Kugaya’s Garden is a plant-selling garden providing healthy plants,
+      garden maintenance, and professional landscaping services.
     </p>
   </div>
 
-  <!-- About / Vibes -->
-  <section class="about">
-    <h2>Our Team & Our Vibe</h2>
+  <!-- Plants -->
+  <section>
+    <h2>Plants for Sale</h2>
     <p>
-      At Kugaya’s Garden, we believe great gardens are created by happy,
-      dedicated people. Our team works together with care, respect,
-      and love for nature.
+      We sell a wide range of plants for homes, hotels, offices,
+      and outdoor spaces.
     </p>
 
-    <div class="vibes">
-      <img src="images/vibe/vibe_1.jpeg" alt="Kugaya Garden team vibe 1">
-      <img src="images/vibe/vibe_2.jpeg" alt="Kugaya Garden team vibe 2">
-      <img src="images/vibe/vibe_3.jpeg" alt="Kugaya Garden team vibe 3">
-      <img src="images/vibe/vibe_4.jpeg" alt="Kugaya Garden team vibe 4">
+    <div class="grid">
+      <div class="card"><img src="images/products/Golden_palm.jpeg" alt="Golden Palm"><strong>Golden Palm</strong></div>
+      <div class="card"><img src="images/products/Coconut_palm.jpeg" alt="Coconut Palm"><strong>Coconut Palm</strong></div>
+      <div class="card"><img src="images/products/Crotons.jpeg" alt="Crotons"><strong>Crotons</strong></div>
+      <div class="card"><img src="images/products/Hibiscus_virgeted.jpeg" alt="Hibiscus"><strong>Hibiscus</strong></div>
     </div>
   </section>
+
+  <!-- Team & vibe -->
+  <section>
+    <h2>Our Team & Our Vibe</h2>
+    <p>
+      Happy people create beautiful gardens. Our team works with care,
+      respect, and love for nature.
+    </p>
+
+    <div class="grid vibes">
+      <img src="images/vibe/vibe_1.jpeg" alt="Team vibe 1">
+      <img src="images/vibe/vibe_2.jpeg" alt="Team vibe 2">
+      <img src="images/vibe/vibe_3.jpeg" alt="Team vibe 3">
+      <img src="images/vibe/vibe_4.jpeg" alt="Team vibe 4">
+    </div>
+  </section>
+
+  <!-- Garden gallery -->
+  <section>
+    <h2>Our Gardens</h2>
+    <p>
+      Some of the gardens we have designed, maintained, and cared for.
+    </p>
+
+    <div class="grid">
+      <div class="card"><img src="images/gardens/garden_1.jpeg" alt="Garden 1"></div>
+      <div class="card"><img src="images/gardens/garden_2.jpeg" alt="Garden 2"></div>
+      <div class="card"><img src="images/gardens/garden_3.jpeg" alt="Garden 3"></div>
+      <div class="card"><img src="images/gardens/garden_4.jpeg" alt="Garden 4"></div>
+      <div class="card"><img src="images/gardens/garden_5.jpeg" alt="Garden 5"></div>
+      <div class="card"><img src="images/gardens/garden_6.jpeg" alt="Garden 6"></div>
+      <div class="card"><img src="images/gardens/garden_7.jpeg" alt="Garden 7"></div>
+      <div class="card"><img src="images/gardens/garden_8.jpeg" alt="Garden 8"></div>
+      <div class="card"><img src="images/gardens/garden_9.jpeg" alt="Garden 9"></div>
+      <div class="card"><img src="images/gardens/garden_10.jpeg" alt="Garden 10"></div>
+      <div class="card"><img src="images/gardens/garden_11.jpeg" alt="Garden 11"></div>
+      <div class="card"><img src="images/gardens/garden_12.jpeg" alt="Garden 12"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h2>Looking for Plants or Garden Services?</h2>
+    <p>Contact us today and let us grow something beautiful together.</p>
+    <a href="contact.html">Contact Kugaya’s Garden</a>
+  </div>
 
 </body>
 </html>
