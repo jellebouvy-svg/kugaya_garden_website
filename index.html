@@ -30,27 +30,6 @@
       text-decoration: underline;
     }
 
-    /* Hero */
-    .hero {
-      background: white;
-      padding: 40px 30px;
-      border-radius: 12px;
-      max-width: 750px;
-      margin: 40px auto;
-    }
-
-    .hero img {
-      max-width: 300px;
-      margin-bottom: 20px;
-    }
-
-    /* Sections */
-    section {
-      max-width: 1200px;
-      margin: 70px auto;
-      padding: 0 20px;
-    }
-
     /* Full-width band */
     .band {
       width: 100%;
@@ -59,12 +38,14 @@
       margin: 80px 0;
     }
 
-    .band section {
-      margin: 0 auto;
+    .band.white {
+      background: white;
     }
 
-    h1 {
-      margin-bottom: 10px;
+    .band section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
     h2 {
@@ -76,6 +57,12 @@
       max-width: 750px;
       margin: 0 auto 35px;
       font-size: 16px;
+    }
+
+    /* Intro */
+    .intro img {
+      max-width: 300px;
+      margin-bottom: 20px;
     }
 
     /* Button */
@@ -187,14 +174,15 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Intro -->
-  <div class="hero">
-    <img src="kugaya_logo.jpg" alt="Kugaya Garden & Landscaping">
-    <h1>Plants, Gardens & Landscaping</h1>
-    <p>
-      Kugaya’s Garden is a plant-selling garden providing healthy plants,
-      professional garden maintenance, and landscaping services.
-    </p>
+  <!-- Intro (full width) -->
+  <div class="band white intro">
+    <section>
+      <img src="kugaya_logo.jpg" alt="Kugaya Garden & Landscaping">
+      <p>
+        Kugaya’s Garden is a plant-selling garden providing healthy plants,
+        professional garden maintenance, and landscaping services.
+      </p>
+    </section>
   </div>
 
   <!-- General images -->
@@ -210,7 +198,7 @@
     </div>
   </div>
 
-  <!-- Our Team (band) -->
+  <!-- Our Team -->
   <div class="band">
     <section>
       <h2>Our Team</h2>
@@ -241,7 +229,7 @@
     </div>
   </div>
 
-  <!-- Plants for sale (band) -->
+  <!-- Plants for sale -->
   <div class="band">
     <section>
       <h2>Plants for Sale</h2>
@@ -270,6 +258,7 @@
 
 </body>
 </html>
+
 
 
 
