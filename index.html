@@ -44,10 +44,23 @@
       margin-bottom: 20px;
     }
 
+    /* Sections */
     section {
       max-width: 1200px;
       margin: 70px auto;
       padding: 0 20px;
+    }
+
+    /* Full-width band */
+    .band {
+      width: 100%;
+      background: #dcefdc;
+      padding: 80px 0;
+      margin: 80px 0;
+    }
+
+    .band section {
+      margin: 0 auto;
     }
 
     h1 {
@@ -95,7 +108,7 @@
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
 
-    /* General image rows (irregular) */
+    /* General image rows */
     .image-flow {
       display: flex;
       flex-direction: column;
@@ -197,21 +210,23 @@
     </div>
   </div>
 
-  <!-- Team -->
-  <section>
-    <h2>Our Team</h2>
-    <p>
-      Happy people create beautiful spaces. Our team works together
-      with care, respect, and love for plants and nature.
-    </p>
+  <!-- Our Team (band) -->
+  <div class="band">
+    <section>
+      <h2>Our Team</h2>
+      <p>
+        Happy people create beautiful spaces. Our team works together
+        with care, respect, and love for plants and nature.
+      </p>
 
-    <div class="vibes">
-      <img src="images/vibe/vibe_1.jpeg">
-      <img src="images/vibe/vibe_2.jpeg">
-      <img src="images/vibe/vibe_3.jpeg">
-      <img src="images/vibe/vibe_4.jpeg">
-    </div>
-  </section>
+      <div class="vibes">
+        <img src="images/vibe/vibe_1.jpeg">
+        <img src="images/vibe/vibe_2.jpeg">
+        <img src="images/vibe/vibe_3.jpeg">
+        <img src="images/vibe/vibe_4.jpeg">
+      </div>
+    </section>
+  </div>
 
   <!-- General images -->
   <div class="image-flow">
@@ -226,15 +241,17 @@
     </div>
   </div>
 
-  <!-- Plants -->
-  <section>
-    <h2>Plants for Sale</h2>
-    <p>
-      We grow and sell a wide variety of quality plants for homes,
-      hotels, offices, and outdoor environments.
-    </p>
-    <a href="products.html" class="btn">View Our Plants</a>
-  </section>
+  <!-- Plants for sale (band) -->
+  <div class="band">
+    <section>
+      <h2>Plants for Sale</h2>
+      <p>
+        We grow and sell a wide variety of quality plants for homes,
+        hotels, offices, and outdoor environments.
+      </p>
+      <a href="products.html" class="btn">View Our Plants</a>
+    </section>
+  </div>
 
   <!-- General images -->
   <div class="image-flow">
@@ -253,6 +270,7 @@
 
 </body>
 </html>
+
 
 
 
