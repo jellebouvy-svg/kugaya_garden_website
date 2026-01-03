@@ -59,33 +59,64 @@
       font-size: 16px;
     }
 
-    /* Cards / grids */
-    .grid {
+    /* CTA button */
+    .btn {
+      display: inline-block;
+      background: #2f6b3f;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Vibes */
+    .vibes {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 25px;
     }
 
-    .card {
-      background: white;
-      border-radius: 14px;
-      padding: 15px;
+    .vibes img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 16px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
 
-    .card img {
+    /* Irregular garden gallery */
+    .garden-gallery {
+      column-count: 3;
+      column-gap: 20px;
+    }
+
+    .garden-gallery img {
       width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
+      margin-bottom: 20px;
+      border-radius: 18px;
+      display: block;
+      break-inside: avoid;
     }
 
-    /* Vibes */
-    .vibes img {
-      height: 240px;
+    @media (max-width: 900px) {
+      .garden-gallery {
+        column-count: 2;
+      }
     }
 
-    /* CTA */
+    @media (max-width: 500px) {
+      .garden-gallery {
+        column-count: 1;
+      }
+    }
+
+    /* CTA footer */
     .cta {
       background: #2f6b3f;
       color: white;
@@ -128,20 +159,14 @@
     </p>
   </div>
 
-  <!-- Plants -->
+  <!-- Plants teaser -->
   <section>
     <h2>Plants for Sale</h2>
     <p>
-      We sell a wide range of plants for homes, hotels, offices,
-      and outdoor spaces.
+      We grow and sell a variety of healthy plants for homes, hotels,
+      offices, and outdoor spaces.
     </p>
-
-    <div class="grid">
-      <div class="card"><img src="images/products/Golden_palm.jpeg" alt="Golden Palm"><strong>Golden Palm</strong></div>
-      <div class="card"><img src="images/products/Coconut_palm.jpeg" alt="Coconut Palm"><strong>Coconut Palm</strong></div>
-      <div class="card"><img src="images/products/Crotons.jpeg" alt="Crotons"><strong>Crotons</strong></div>
-      <div class="card"><img src="images/products/Hibiscus_virgeted.jpeg" alt="Hibiscus"><strong>Hibiscus</strong></div>
-    </div>
+    <a href="products.html" class="btn">View Our Plants</a>
   </section>
 
   <!-- Team & vibe -->
@@ -152,7 +177,7 @@
       respect, and love for nature.
     </p>
 
-    <div class="grid vibes">
+    <div class="vibes">
       <img src="images/vibe/vibe_1.jpeg" alt="Team vibe 1">
       <img src="images/vibe/vibe_2.jpeg" alt="Team vibe 2">
       <img src="images/vibe/vibe_3.jpeg" alt="Team vibe 3">
@@ -164,22 +189,22 @@
   <section>
     <h2>Our Gardens</h2>
     <p>
-      Some of the gardens we have designed, maintained, and cared for.
+      A selection of gardens we have designed, maintained, and cared for.
     </p>
 
-    <div class="grid">
-      <div class="card"><img src="images/general_garden/garden_1.jpeg" alt="Garden 1"></div>
-      <div class="card"><img src="images/general_garden/garden_2.jpeg" alt="Garden 2"></div>
-      <div class="card"><img src="images/general_garden/garden_3.jpeg" alt="Garden 3"></div>
-      <div class="card"><img src="images/general_garden/garden_4.jpeg" alt="Garden 4"></div>
-      <div class="card"><img src="images/general_garden/garden_5.jpeg" alt="Garden 5"></div>
-      <div class="card"><img src="images/general_garden/garden_6.jpeg" alt="Garden 6"></div>
-      <div class="card"><img src="images/general_garden/garden_7.jpeg" alt="Garden 7"></div>
-      <div class="card"><img src="images/general_garden/garden_8.jpeg" alt="Garden 8"></div>
-      <div class="card"><img src="images/general_garden/garden_9.jpeg" alt="Garden 9"></div>
-      <div class="card"><img src="images/general_garden/garden_10.jpeg" alt="Garden 10"></div>
-      <div class="card"><img src="images/general_garden/garden_11.jpeg" alt="Garden 11"></div>
-      <div class="card"><img src="images/general_garden/garden_12.jpeg" alt="Garden 12"></div>
+    <div class="garden-gallery">
+      <img src="images/general_garden/garden_1.jpeg" alt="Garden 1">
+      <img src="images/general_garden/garden_2.jpeg" alt="Garden 2">
+      <img src="images/general_garden/garden_3.jpeg" alt="Garden 3">
+      <img src="images/general_garden/garden_4.jpeg" alt="Garden 4">
+      <img src="images/general_garden/garden_5.jpeg" alt="Garden 5">
+      <img src="images/general_garden/garden_6.jpeg" alt="Garden 6">
+      <img src="images/general_garden/garden_7.jpeg" alt="Garden 7">
+      <img src="images/general_garden/garden_8.jpeg" alt="Garden 8">
+      <img src="images/general_garden/garden_9.jpeg" alt="Garden 9">
+      <img src="images/general_garden/garden_10.jpeg" alt="Garden 10">
+      <img src="images/general_garden/garden_11.jpeg" alt="Garden 11">
+      <img src="images/general_garden/garden_12.jpeg" alt="Garden 12">
     </div>
   </section>
 
@@ -192,5 +217,6 @@
 
 </body>
 </html>
+
 
 
