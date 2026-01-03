@@ -44,7 +44,6 @@
       margin-bottom: 20px;
     }
 
-    /* Sections */
     section {
       max-width: 1200px;
       margin: 70px auto;
@@ -96,27 +95,30 @@
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
 
-    /* Garden gallery */
-    .garden-gallery {
+    /* General image rows (irregular) */
+    .image-flow {
       display: flex;
       flex-direction: column;
       gap: 30px;
+      margin: 80px auto;
+      max-width: 1200px;
+      padding: 0 20px;
     }
 
-    .garden-row {
+    .image-row {
       display: grid;
       gap: 25px;
     }
 
-    .garden-row.two {
+    .image-row.two {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .garden-row.three {
+    .image-row.three {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    .garden-row img {
+    .image-row img {
       width: 100%;
       height: 260px;
       object-fit: cover;
@@ -125,15 +127,15 @@
 
     /* Responsive */
     @media (max-width: 900px) {
-      .garden-row.two,
-      .garden-row.three {
+      .image-row.two,
+      .image-row.three {
         grid-template-columns: repeat(2, 1fr);
       }
     }
 
     @media (max-width: 500px) {
-      .garden-row.two,
-      .garden-row.three {
+      .image-row.two,
+      .image-row.three {
         grid-template-columns: 1fr;
       }
     }
@@ -172,7 +174,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Hero -->
+  <!-- Intro -->
   <div class="hero">
     <img src="kugaya_logo.jpg" alt="Kugaya Garden & Landscaping">
     <h1>Plants, Gardens & Landscaping</h1>
@@ -182,70 +184,65 @@
     </p>
   </div>
 
-  <!-- Plants teaser -->
+  <!-- General images -->
+  <div class="image-flow">
+    <div class="image-row two">
+      <img src="images/general_garden/garden_1.jpeg">
+      <img src="images/general_garden/garden_2.jpeg">
+    </div>
+    <div class="image-row three">
+      <img src="images/general_garden/garden_3.jpeg">
+      <img src="images/general_garden/garden_4.jpeg">
+      <img src="images/general_garden/garden_5.jpeg">
+    </div>
+  </div>
+
+  <!-- Team -->
+  <section>
+    <h2>Our Team</h2>
+    <p>
+      Happy people create beautiful spaces. Our team works together
+      with care, respect, and love for plants and nature.
+    </p>
+
+    <div class="vibes">
+      <img src="images/vibe/vibe_1.jpeg">
+      <img src="images/vibe/vibe_2.jpeg">
+      <img src="images/vibe/vibe_3.jpeg">
+      <img src="images/vibe/vibe_4.jpeg">
+    </div>
+  </section>
+
+  <!-- General images -->
+  <div class="image-flow">
+    <div class="image-row three">
+      <img src="images/general_garden/garden_6.jpeg">
+      <img src="images/general_garden/garden_7.jpeg">
+      <img src="images/general_garden/garden_8.jpeg">
+    </div>
+    <div class="image-row two">
+      <img src="images/general_garden/garden_9.jpeg">
+      <img src="images/general_garden/garden_10.jpeg">
+    </div>
+  </div>
+
+  <!-- Plants -->
   <section>
     <h2>Plants for Sale</h2>
     <p>
-      We grow and sell a variety of quality plants for homes, hotels,
-      offices, and outdoor spaces.
+      We grow and sell a wide variety of quality plants for homes,
+      hotels, offices, and outdoor environments.
     </p>
     <a href="products.html" class="btn">View Our Plants</a>
   </section>
 
-  <!-- Team & vibe -->
-  <section>
-    <h2>Our Team & Our Vibe</h2>
-    <p>
-      Happy people create beautiful gardens. Our team works together
-      with care, respect, and love for nature.
-    </p>
-
-    <div class="vibes">
-      <img src="images/vibe/vibe_1.jpeg" alt="Team vibe 1">
-      <img src="images/vibe/vibe_2.jpeg" alt="Team vibe 2">
-      <img src="images/vibe/vibe_3.jpeg" alt="Team vibe 3">
-      <img src="images/vibe/vibe_4.jpeg" alt="Team vibe 4">
+  <!-- General images -->
+  <div class="image-flow">
+    <div class="image-row two">
+      <img src="images/general_garden/garden_11.jpeg">
+      <img src="images/general_garden/garden_12.jpeg">
     </div>
-  </section>
-
-  <!-- Gardens -->
-  <section>
-    <h2>Our Gardens</h2>
-    <p>
-      A selection of gardens we have designed, maintained, and cared for.
-    </p>
-
-    <div class="garden-gallery">
-
-      <div class="garden-row two">
-        <img src="images/general_garden/garden_1.jpeg" alt="Garden 1">
-        <img src="images/general_garden/garden_2.jpeg" alt="Garden 2">
-      </div>
-
-      <div class="garden-row three">
-        <img src="images/general_garden/garden_3.jpeg" alt="Garden 3">
-        <img src="images/general_garden/garden_4.jpeg" alt="Garden 4">
-        <img src="images/general_garden/garden_5.jpeg" alt="Garden 5">
-      </div>
-
-      <div class="garden-row two">
-        <img src="images/general_garden/garden_6.jpeg" alt="Garden 6">
-        <img src="images/general_garden/garden_7.jpeg" alt="Garden 7">
-      </div>
-
-      <div class="garden-row three">
-        <img src="images/general_garden/garden_8.jpeg" alt="Garden 8">
-        <img src="images/general_garden/garden_9.jpeg" alt="Garden 9">
-        <img src="images/general_garden/garden_10.jpeg" alt="Garden 10">
-      </div>
-
-      <div class="garden-row two">
-        <img src="images/general_garden/garden_11.jpeg" alt="Garden 11">
-        <img src="images/general_garden/garden_12.jpeg" alt="Garden 12">
-      </div>
-
-    </div>
-  </section>
+  </div>
 
   <!-- CTA -->
   <div class="cta">
@@ -256,6 +253,7 @@
 
 </body>
 </html>
+
 
 
 
