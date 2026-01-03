@@ -32,12 +32,12 @@
       background: white;
       padding: 30px;
       border-radius: 12px;
-      max-width: 650px;
+      max-width: 700px;
       margin: 40px auto;
     }
 
     .box img {
-      max-width: 100%;
+      max-width: 280px;
       height: auto;
       margin-bottom: 20px;
     }
@@ -54,6 +54,32 @@
     }
 
     .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* Map */
+    .map-container {
+      margin-top: 30px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+    }
+
+    .map-link {
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: bold;
+      color: #2f6b3f;
+      text-decoration: none;
+    }
+
+    .map-link:hover {
       text-decoration: underline;
     }
   </style>
@@ -91,7 +117,26 @@
       <a href="https://www.instagram.com/kugayasgarden/" target="_blank">Instagram – Kugaya’s Garden</a><br>
       <a href="https://www.facebook.com/profile.php?id=61584452922600#" target="_blank">Facebook – Kugaya’s Garden</a>
     </div>
+
+    <!-- Google Maps -->
+    <h2>Our Location</h2>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=Mtwapa%20ATC&z=17&output=embed"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <a
+      class="map-link"
+      href="https://www.google.com/maps/search/Mtwapa%20ATC/"
+      target="_blank">
+      📍 View on Google Maps
+    </a>
   </div>
 
 </body>
 </html>
+
