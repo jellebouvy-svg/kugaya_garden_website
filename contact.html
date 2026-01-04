@@ -39,12 +39,12 @@
       align-items: center;
       white-space: nowrap;
       overflow-x: auto;
-      scrollbar-width: none;        /* Firefox */
-      -ms-overflow-style: none;     /* IE & Edge */
+      scrollbar-width: none;
+      -ms-overflow-style: none;
     }
 
     .nav-links::-webkit-scrollbar {
-      display: none;                /* Chrome, Safari */
+      display: none;
     }
 
     .nav-links a {
@@ -81,11 +81,6 @@
       font-size: 16px;
     }
 
-    .contact-main {
-      margin: 30px 0;
-      font-size: 17px;
-    }
-
     .contact-main a {
       display: block;
       margin: 10px 0;
@@ -95,18 +90,10 @@
       font-size: 18px;
     }
 
-    .contact-main a:hover {
-      text-decoration: underline;
-    }
-
     /* Opening hours */
     .hours {
       margin: 35px 0;
       font-size: 16px;
-    }
-
-    .hours p {
-      margin: 6px 0;
     }
 
     /* Map */
@@ -131,26 +118,38 @@
       text-decoration: none;
     }
 
-    .map-link:hover {
-      text-decoration: underline;
-    }
-
-    /* Socials */
+    /* ================= SOCIAL ICONS ================= */
     .socials {
-      margin-top: 40px;
-      font-size: 16px;
+      margin-top: 45px;
     }
 
-    .socials a {
-      display: block;
-      margin: 8px 0;
-      color: #2f6b3f;
-      font-weight: bold;
-      text-decoration: none;
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 15px;
     }
 
-    .socials a:hover {
-      text-decoration: underline;
+    .social-icons a {
+      width: 52px;
+      height: 52px;
+      background: #2f6b3f;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+      opacity: 0.85;
+    }
+
+    .social-icons svg {
+      width: 26px;
+      height: 26px;
+      fill: white;
     }
 
     /* ================= MOBILE ================= */
@@ -212,11 +211,6 @@
 
     <h2>Our Location</h2>
 
-    <p class="intro">
-      Feel free to come by our garden to see plants, discuss options,
-      and explore possibilities in person.
-    </p>
-
     <div class="map-container">
       <iframe
         src="https://www.google.com/maps?q=Mtwapa%20ATC&z=17&output=embed"
@@ -231,22 +225,34 @@
       📍 View on Google Maps
     </a>
 
+    <!-- SOCIAL MEDIA -->
     <div class="socials">
-      <h2>Follow Our Work</h2>
-      <p>
-        Follow Kugaya’s Garden on social media to see our latest gardens,
-        plants, and daily work.
-      </p>
+      <h2>Follow us on social media</h2>
 
-      <a href="https://www.tiktok.com/@kugayasgarden" target="_blank">
-        TikTok – Kugaya’s Garden
-      </a>
-      <a href="https://www.instagram.com/kugayasgarden/" target="_blank">
-        Instagram – Kugaya’s Garden
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61584452922600#" target="_blank">
-        Facebook – Kugaya’s Garden
-      </a>
+      <div class="social-icons">
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@kugayasgarden" target="_blank" aria-label="TikTok">
+          <svg viewBox="0 0 24 24">
+            <path d="M16 1a5 5 0 0 0 5 5v4a9 9 0 0 1-5-1.6V15a7 7 0 1 1-7-7v4a3 3 0 1 0 3 3V1h4z"/>
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/kugayasgarden/" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61584452922600#" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24">
+            <path d="M13 22v-9h3l1-4h-4V7a2 2 0 0 1 2-2h2V1h-3a5 5 0 0 0-5 5v3H7v4h3v9h3z"/>
+          </svg>
+        </a>
+
+      </div>
     </div>
 
   </div>
