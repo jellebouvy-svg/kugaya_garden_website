@@ -14,10 +14,10 @@
       text-align: center;
     }
 
-    /* Navigation */
+    /* ================= NAVIGATION ================= */
     .navbar {
       background: #2f6b3f;
-      padding: 10px 0;
+      padding: 14px 0;
     }
 
     .nav-container {
@@ -31,22 +31,25 @@
     }
 
     .nav-logo img {
-      height: 42px;
+      height: 60px;
       width: auto;
     }
 
     .nav-links a {
       color: white;
       text-decoration: none;
-      margin-left: 25px;
+      margin-left: 32px;
       font-weight: bold;
+      font-size: 18px;
+      padding: 10px 14px;
+      border-radius: 6px;
     }
 
     .nav-links a:hover {
-      text-decoration: underline;
+      background: rgba(255, 255, 255, 0.15);
     }
 
-    /* Full-width band */
+    /* ================= BANDS ================= */
     .band {
       width: 100%;
       background: #dcefdc;
@@ -75,7 +78,7 @@
       font-size: 16px;
     }
 
-    /* Intro */
+    /* ================= INTRO ================= */
     .intro img {
       max-width: 420px;
       width: 100%;
@@ -83,7 +86,7 @@
       margin-bottom: 25px;
     }
 
-    /* Button */
+    /* ================= BUTTON ================= */
     .btn {
       display: inline-block;
       background: #2f6b3f;
@@ -98,7 +101,7 @@
       opacity: 0.9;
     }
 
-    /* Team vibes */
+    /* ================= TEAM VIBES ================= */
     .vibes {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -113,7 +116,7 @@
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
 
-    /* General image rows */
+    /* ================= IMAGE FLOW ================= */
     .image-flow {
       display: flex;
       flex-direction: column;
@@ -143,31 +146,7 @@
       border-radius: 18px;
     }
 
-    /* Responsive */
-    @media (max-width: 900px) {
-      .image-row.two,
-      .image-row.three {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 500px) {
-      .image-row.two,
-      .image-row.three {
-        grid-template-columns: 1fr;
-      }
-
-      .nav-logo img {
-        height: 34px;
-      }
-
-      .nav-links a {
-        margin-left: 15px;
-        font-size: 14px;
-      }
-    }
-
-    /* CTA footer */
+    /* ================= CTA ================= */
     .cta {
       background: #2f6b3f;
       color: white;
@@ -189,12 +168,37 @@
     .cta a:hover {
       opacity: 0.85;
     }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 900px) {
+      .image-row.two,
+      .image-row.three {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .image-row.two,
+      .image-row.three {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-logo img {
+        height: 44px;
+      }
+
+      .nav-links a {
+        font-size: 15px;
+        margin-left: 18px;
+        padding: 8px 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
@@ -211,7 +215,7 @@
     </div>
   </nav>
 
-  <!-- Intro -->
+  <!-- INTRO -->
   <div class="band white intro">
     <section>
       <img src="kugaya_logo.jpg" alt="Kugaya Garden & Landscaping">
@@ -222,7 +226,7 @@
     </section>
   </div>
 
-  <!-- General images -->
+  <!-- IMAGES -->
   <div class="image-flow">
     <div class="image-row two">
       <img src="images/general_garden/garden_1.jpeg">
@@ -235,7 +239,7 @@
     </div>
   </div>
 
-  <!-- Our Team -->
+  <!-- TEAM -->
   <div class="band">
     <section>
       <h2>Our Team</h2>
@@ -253,7 +257,7 @@
     </section>
   </div>
 
-  <!-- General images -->
+  <!-- IMAGES -->
   <div class="image-flow">
     <div class="image-row three">
       <img src="images/general_garden/garden_6.jpeg">
@@ -266,7 +270,7 @@
     </div>
   </div>
 
-  <!-- Plants for sale -->
+  <!-- PLANTS -->
   <div class="band">
     <section>
       <h2>Plants for Sale</h2>
@@ -278,7 +282,7 @@
     </section>
   </div>
 
-  <!-- General images -->
+  <!-- IMAGES -->
   <div class="image-flow">
     <div class="image-row two">
       <img src="images/general_garden/garden_11.jpeg">
@@ -295,6 +299,7 @@
 
 </body>
 </html>
+
 
 
 
