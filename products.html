@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kugaya Garden - Products</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,43 +14,72 @@
       text-align: center;
     }
 
-    nav {
+    /* ================= NAVIGATION ================= */
+    .navbar {
       background: #2f6b3f;
-      padding: 15px;
+      padding: 14px 0;
     }
 
-    nav a {
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo img {
+      height: 90px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;        /* Firefox */
+      -ms-overflow-style: none;     /* IE & Edge */
+    }
+
+    .nav-links::-webkit-scrollbar {
+      display: none;                /* Chrome, Safari */
+    }
+
+    .nav-links a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin-left: 24px;
       font-weight: bold;
+      font-size: 18px;
+      padding: 10px 14px;
+      border-radius: 6px;
+      flex-shrink: 0;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.15);
     }
 
+    /* ================= PAGE ================= */
     h1 {
       margin-top: 40px;
     }
 
+    p {
+      margin-bottom: 40px;
+    }
+
+    /* ================= PRODUCTS ================= */
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
       max-width: 1200px;
-      margin: 40px auto 80px;
+      margin: 0 auto 80px;
       padding: 0 20px;
     }
-    
-    .product-card img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
-
 
     .product-card {
       background: white;
@@ -58,26 +88,59 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
+    .product-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
     .product-card h3 {
       margin: 10px 0 0;
       color: #2f6b3f;
       font-size: 18px;
     }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 600px) {
+      .nav-logo img {
+        height: 60px;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+        margin-left: 14px;
+        padding: 8px 10px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="kugaya_logo.jpg" alt="Kugaya Garden Logo">
+        </a>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </nav>
 
+  <!-- PAGE CONTENT -->
   <h1>Our Plants</h1>
   <p>High-quality plants for gardens and landscaping 🌿</p>
 
-  <!-- Products grid -->
+  <!-- PRODUCTS GRID -->
   <div class="products">
 
     <div class="product-card">
@@ -114,4 +177,5 @@
 
 </body>
 </html>
+
 
