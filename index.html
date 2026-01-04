@@ -22,7 +22,7 @@
     .nav-container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -33,14 +33,22 @@
       width: auto;
     }
 
+    .nav-links {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+
     .nav-links a {
       color: white;
       text-decoration: none;
-      margin-left: 32px;
+      margin-left: 24px;
       font-weight: bold;
       font-size: 18px;
       padding: 10px 14px;
       border-radius: 6px;
+      flex-shrink: 0;
     }
 
     .nav-links a:hover {
@@ -207,14 +215,17 @@
     }
 
     /* ================= RESPONSIVE ================= */
-    @media (max-width: 900px) {
-      .image-row.two,
-      .image-row.three {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
     @media (max-width: 600px) {
+      .nav-logo img {
+        height: 60px;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+        margin-left: 14px;
+        padding: 8px 10px;
+      }
+
       .hero-content {
         text-align: center;
       }
@@ -223,20 +234,8 @@
         font-size: 34px;
       }
 
-      .nav-logo img {
-        height: 60px;
-      }
-
-      .nav-links a {
-        font-size: 15px;
-        margin-left: 15px;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .image-row.two,
-      .image-row.three {
-        grid-template-columns: 1fr;
+      .image-row img {
+        height: 180px;
       }
     }
   </style>
@@ -278,7 +277,7 @@
     </div>
   </section>
 
-  <!-- GENERAL IMAGES (after hero) -->
+  <!-- GENERAL IMAGES -->
   <div class="image-flow">
     <div class="image-row two">
       <img src="images/general_garden/garden_1.jpeg">
@@ -309,7 +308,7 @@
     </section>
   </div>
 
-  <!-- GENERAL IMAGES (between team and plants) -->
+  <!-- GENERAL IMAGES -->
   <div class="image-flow">
     <div class="image-row three">
       <img src="images/general_garden/garden_6.jpeg">
@@ -351,14 +350,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
