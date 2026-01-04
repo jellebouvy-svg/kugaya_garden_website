@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kugaya Garden - Contact</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,22 +14,55 @@
       text-align: center;
     }
 
-    nav {
+    /* ================= NAVIGATION ================= */
+    .navbar {
       background: #2f6b3f;
-      padding: 15px;
+      padding: 14px 0;
     }
 
-    nav a {
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo img {
+      height: 90px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;        /* Firefox */
+      -ms-overflow-style: none;     /* IE & Edge */
+    }
+
+    .nav-links::-webkit-scrollbar {
+      display: none;                /* Chrome, Safari */
+    }
+
+    .nav-links a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin-left: 24px;
       font-weight: bold;
+      font-size: 18px;
+      padding: 10px 14px;
+      border-radius: 6px;
+      flex-shrink: 0;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.15);
     }
 
+    /* ================= CONTACT BOX ================= */
     .box {
       background: white;
       padding: 40px 30px;
@@ -118,18 +152,42 @@
     .socials a:hover {
       text-decoration: underline;
     }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 600px) {
+      .nav-logo img {
+        height: 60px;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+        margin-left: 14px;
+        padding: 8px 10px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="kugaya_logo.jpg" alt="Kugaya Garden Logo">
+        </a>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </nav>
 
-  <!-- Contact content -->
+  <!-- CONTACT CONTENT -->
   <div class="box">
 
     <h1>Get in Touch</h1>
@@ -195,6 +253,7 @@
 
 </body>
 </html>
+
 
 
 
