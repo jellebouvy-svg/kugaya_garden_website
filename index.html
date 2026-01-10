@@ -38,6 +38,12 @@
       align-items: center;
       white-space: nowrap;
       overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+      display: none;
     }
 
     .nav-links a {
@@ -54,17 +60,6 @@
     .nav-links a:hover {
       background: rgba(255, 255, 255, 0.15);
     }
-
-    /* Hide scrollbar but keep scroll functionality */
-    .nav-links {
-      scrollbar-width: none;        /* Firefox */
-      -ms-overflow-style: none;     /* IE & Edge */
-    }
-    
-    .nav-links::-webkit-scrollbar {
-      display: none;                /* Chrome, Safari */
-    }
-
 
     /* ================= HERO ================= */
     .hero-bg {
@@ -268,7 +263,6 @@
         <a href="landscaping.html">Landscaping & Gardening</a>
         <a href="contact.html">Contact</a>
       </div>
-
     </div>
   </nav>
 
@@ -333,6 +327,32 @@
     </div>
   </div>
 
+  <!-- LANDSCAPING -->
+  <div class="band">
+    <section>
+      <h2>Landscaping & Gardening</h2>
+      <p>
+        From full garden design to maintenance and planting,
+        we provide professional landscaping and gardening services
+        for homes, hotels, and businesses.
+      </p>
+      <a href="landscaping.html" class="btn">View Our Services</a>
+    </section>
+  </div>
+
+  <!-- GENERAL IMAGES -->
+  <div class="image-flow">
+    <div class="image-row three">
+      <img src="images/general_garden/garden_11.jpeg">
+      <img src="images/general_garden/garden_12.jpeg">
+      <img src="images/general_garden/garden_13.jpeg">
+    </div>
+    <div class="image-row two">
+      <img src="images/general_garden/garden_14.jpeg">
+      <img src="images/general_garden/garden_15.jpeg">
+    </div>
+  </div>
+
   <!-- PLANTS -->
   <div class="band">
     <section>
@@ -347,9 +367,10 @@
 
   <!-- FINAL IMAGES -->
   <div class="image-flow">
-    <div class="image-row two">
-      <img src="images/general_garden/garden_11.jpeg">
-      <img src="images/general_garden/garden_12.jpeg">
+    <div class="image-row three">
+      <img src="images/general_garden/garden_16.jpeg">
+      <img src="images/general_garden/garden_17.jpeg">
+      <img src="images/general_garden/garden_18.jpeg">
     </div>
   </div>
 
