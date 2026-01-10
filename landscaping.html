@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kugaya Garden - Landscaping & Gardening</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eaf6ea;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* ================= NAVIGATION ================= */
+    .navbar {
+      background: #2f6b3f;
+      padding: 14px 0;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo img {
+      height: 90px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px 14px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* ================= CONTENT ================= */
+    .box {
+      background: white;
+      padding: 50px 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    h1, h2 {
+      color: #2f6b3f;
+    }
+
+    p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    ul li {
+      margin: 12px 0;
+      font-size: 16px;
+    }
+
+    /* ================= CTA ================= */
+    .cta {
+      background: #2f6b3f;
+      color: white;
+      padding: 45px 20px;
+      margin-top: 80px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 15px;
+      background: white;
+      color: #2f6b3f;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 600px) {
+      .nav-logo img {
+        height: 60px;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+        margin-left: 14px;
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="kugaya_logo.jpg" alt="Kugaya Garden Logo">
+        </a>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="landscaping.html">Landscaping & Gardening</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="box">
+    <h1>Landscaping & Gardening</h1>
+
+    <p>
+      Kugaya’s Garden provides professional landscaping and gardening
+      services for homes, hotels, offices, and outdoor spaces.
+    </p>
+
+    <h2>Our Services</h2>
+
+    <ul>
+      <li>🌿 Garden design & landscaping</li>
+      <li>🌱 Planting & plant replacement</li>
+      <li>🌳 Garden maintenance</li>
+      <li>🍃 Lawn care & trimming</li>
+      <li>🌸 Flower bed design</li>
+      <li>🪴 Advice on plant selection & care</li>
+    </ul>
+
+    <p>
+      We work closely with our clients to create healthy,
+      beautiful outdoor environments that match their needs
+      and surroundings.
+    </p>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h2>Need Landscaping or Garden Maintenance?</h2>
+    <p>Contact us today to discuss your garden project.</p>
+    <a href="contact.html">Get in Touch</a>
+  </div>
+
+</body>
+</html>
