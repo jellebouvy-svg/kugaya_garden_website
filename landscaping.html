@@ -62,35 +62,52 @@
       background: rgba(255, 255, 255, 0.15);
     }
 
-    /* ================= CONTENT ================= */
-    .box {
+    /* ================= PAGE HEADER ================= */
+    .header {
       background: white;
-      padding: 50px 30px;
-      border-radius: 12px;
-      max-width: 800px;
-      margin: 50px auto;
+      padding: 60px 20px;
+      margin-bottom: 60px;
     }
 
-    h1, h2 {
+    .header h1 {
       color: #2f6b3f;
+      margin-bottom: 15px;
     }
 
-    p {
-      max-width: 650px;
-      margin: 0 auto 25px;
-      font-size: 16px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      max-width: 600px;
+    .header p {
+      max-width: 700px;
       margin: 0 auto;
+      font-size: 16px;
     }
 
-    ul li {
-      margin: 12px 0;
-      font-size: 16px;
+    /* ================= GALLERY ================= */
+    .gallery {
+      max-width: 1200px;
+      margin: 0 auto 80px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      text-align: left;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .gallery-item .caption {
+      padding: 15px;
+      font-size: 15px;
+      color: #333;
     }
 
     /* ================= CTA ================= */
@@ -98,7 +115,7 @@
       background: #2f6b3f;
       color: white;
       padding: 45px 20px;
-      margin-top: 80px;
+      margin-top: 60px;
     }
 
     .cta a {
@@ -122,6 +139,10 @@
         font-size: 14px;
         margin-left: 14px;
         padding: 8px 10px;
+      }
+
+      .gallery-item img {
+        height: 200px;
       }
     }
   </style>
@@ -147,37 +168,65 @@
     </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
-  <div class="box">
+  <!-- HEADER -->
+  <div class="header">
     <h1>Landscaping & Gardening</h1>
-
     <p>
-      Kugaya’s Garden provides professional landscaping and gardening
-      services for homes, hotels, offices, and outdoor spaces.
+      We provide professional landscaping and gardening services,
+      from planting and spacing to grass installation and complete
+      garden design. Below are examples of our practical work.
     </p>
+  </div>
 
-    <h2>Our Services</h2>
+  <!-- GALLERY -->
+  <div class="gallery">
 
-    <ul>
-      <li>🌿 Garden design & landscaping</li>
-      <li>🌱 Planting & plant replacement</li>
-      <li>🌳 Garden maintenance</li>
-      <li>🍃 Lawn care & trimming</li>
-      <li>🌸 Flower bed design</li>
-      <li>🪴 Advice on plant selection & care</li>
-    </ul>
+    <div class="gallery-item">
+      <img src="images/landscaping/Arranging and Distacing of Axecks Trees.jpeg">
+      <div class="caption">Arranging and distancing of Axecks trees</div>
+    </div>
 
-    <p>
-      We work closely with our clients to create healthy,
-      beautiful outdoor environments that match their needs
-      and surroundings.
-    </p>
+    <div class="gallery-item">
+      <img src="images/landscaping/Axecks tree gardening.jpeg">
+      <div class="caption">Axecks tree gardening</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/landscaping/Landscaping 101.jpeg">
+      <div class="caption">Landscaping preparation and planning</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/landscaping/Landscaping.jpeg">
+      <div class="caption">General landscaping work</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/landscaping/Pemba grass gardening.jpeg">
+      <div class="caption">Pemba grass gardening</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/landscaping/Planting of Pember grass.jpeg">
+      <div class="caption">Planting of Pemba grass</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/landscaping/Plantings of Pember Grass and progressing.jpeg">
+      <div class="caption">Progressing Pemba grass planting</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/landscaping/Rock Garden With Hills.jpeg">
+      <div class="caption">Rock garden with hills</div>
+    </div>
+
   </div>
 
   <!-- CTA -->
   <div class="cta">
-    <h2>Need Landscaping or Garden Maintenance?</h2>
-    <p>Contact us today to discuss your garden project.</p>
+    <h2>Need Landscaping or Gardening Services?</h2>
+    <p>Contact us to discuss your project and garden needs.</p>
     <a href="contact.html">Get in Touch</a>
   </div>
 
